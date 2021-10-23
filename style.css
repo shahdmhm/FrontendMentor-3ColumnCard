@@ -1,0 +1,129 @@
+
+body{
+    text-align: left;
+    margin: 100px auto;
+    padding: 0 10px;  
+    justify-content: center;
+    transform: translateX(10%);
+}
+
+html{
+    font-size: 15px;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    position:relative;
+}
+
+.flex-container .box1 {
+    padding: 35px;
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 7px 0px 0px 7px  
+}
+
+.flex-container .box2 {
+    padding: 35px;
+    background-color: hsl(184, 100%, 22%);
+}
+
+.flex-container .box3 {
+    padding: 35px;
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 7px 7px 0px
+}
+
+img{
+    padding: 8px;
+}
+
+h1{
+    color: hsl(0, 0%, 95%);
+    margin-left: 8px;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    padding: 2px;
+    line-height: 1.5;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+button{
+    margin-top: 50px;
+    padding: 10px 25px;
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    border: none;
+    border-radius: 30px;
+    transition-duration: 0.5s;
+    align-self: flex-end;
+    
+}
+
+.flex-container .box1 .button{
+    color: hsl(31, 77%, 52%);
+}
+
+.flex-container .box1 .button:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.flex-container .box2 .button{
+    color: hsl(184, 100%, 22%);
+}
+
+.flex-container .box2 .button:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.flex-container .box3 .button{
+    color: hsl(179, 100%, 13%);
+}
+
+.flex-container .box3 .button:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.attribution {
+        position: relative;
+        bottom: 0%;
+        left: 20%;
+    }
+
+
+@media screen and (max-width: 880px) and (max-height: 900px) {
+    
+    .flex-container {
+        display: flex;
+        flex-flow: column;
+        width: 80%;
+        justify-content: center;
+        box-sizing: border-box;
+    } 
+
+    .flex-container .box1 {
+        padding: 35px;
+        border-radius: 7px 7px 0px 0px
+        
+    }
+    
+    .flex-container .box2 {
+        padding: 35px;
+    }
+    
+    .flex-container .box3 {
+        padding: 35px;
+        border-radius: 0px 0px 7px 7px
+    }
+}
